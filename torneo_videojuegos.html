@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<head>
+  <title>
+    Registro Torneo de Videojuegos
+  </title>
+</head>
+<body> 
+    <h1>
+      Registro para un Torneo de Videojuegos
+    </h1>
+    <form action="post">
+      <table border="1" cellpadding="8">
+
+        <tbody>
+          <tr>
+            <th>
+              <label for="name">
+                Nombre del jugador
+              </label>
+            </th>
+            <td>
+              <input id="name" type="text" placeholder="Entre 3 y 15 caracteres" minlength="3" maxlength="15" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <label for="correo">
+                Correo electrónico
+              </label>                                
+            </th>
+            <td>
+              <input id="correo" type="email" placeholder="ejemplo@correo.com" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <label for="edad">
+                Edad
+              </label>          
+            </th>
+            <td>
+              <input id="edad" type="number" min="12" max="40" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th> 
+              <label for="apodo">
+               Nickname
+              </label>                    
+            </th>
+            <td>
+              <input id="apodo" type="text" placeholder="Solo letras y números" pattern="[A-Za-z0-9]+" required>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+                Categoria
+            </th>
+            <td>
+              <fieldset>
+                <label>
+                  <input type="radio" name="categoria" value="principiante" required> 
+                  Principiante
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="categoria" value="intermedio"> 
+                  Intermedio
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="categoria" value="experto"> 
+                  Experto
+                </label>
+              </fieldset>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Juegos favoritos</th>
+            <td>
+              <fieldset>                
+                <label>
+                  <input type="checkbox" name="juegos" value="FIFA"> 
+                  FIFA
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="juegos" value="LoL"> 
+                  LoL
+                </label>
+                <br>
+                <label>
+                  <input type="checkbox" name="juegos" value="Minecraft"> 
+                  Minecraft
+                </label>
+                <br>
+              </fieldset>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+                Fecha de inscripción
+            </th>
+            <td>
+              <input type="date" min="2025-01-01" max="2025-12-31" required>
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr rowspan="2">
+            <td colspan="2" align="center">
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Restablecer">
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      </form>
+  </div>
+</body>
